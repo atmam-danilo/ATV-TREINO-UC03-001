@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="001"/>
+        <attribute name="authors" value="danilo.lwaithmam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-04 09:49:09 "/>
+        <attribute name="created" value="ZGFuaWxvLmx3YWl0aG1hbTtTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0wNDsiMDk6MDk6MjAgIjszNzA0"/>
+        <attribute name="edited" value="ZGFuaWxvLmx3YWl0aG1hbTtTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0wNDsiMDk6NDk6MDkgIjs2OzM4Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero.&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero=100">
+                <then>
+                    <output expression="&quot; O n&#250;mero &#233; 100.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero&gt;100">
+                        <then>
+                            <output expression="&quot; O n&#250;mero &#233; maior que 100.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot; O n&#250;mero &#233; menor que 100.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
