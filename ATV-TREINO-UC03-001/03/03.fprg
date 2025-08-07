@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="03"/>
+        <attribute name="authors" value="danilo.lwaithmam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-05 10:12:24 "/>
+        <attribute name="created" value="ZGFuaWxvLmx3YWl0aG1hbTtTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0wNTsiMDY6NTk6MjggIjszNzE1"/>
+        <attribute name="edited" value="ZGFuaWxvLmx3YWl0aG1hbTtTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0wNTsiMTA6MTI6MjQgIjszOzM4MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="funcionario" type="String" array="False" size=""/>
+            <declare name="vendas" type="Real" array="False" size=""/>
+            <declare name="comissao" type="Real" array="False" size=""/>
+            <output expression="&quot; Digite o nome do funcion&#225;rio.&quot;" newline="True"/>
+            <input variable="funcionario"/>
+            <output expression="&quot; Escreva o total de vendas de &quot; &amp;funcionario&amp; &quot; .&quot;" newline="True"/>
+            <input variable="vendas"/>
+            <assign variable="comissao" expression="(10*vendas)/100"/>
+            <output expression="&quot; A comiss&#227;o de &quot; &amp;funcionario&amp; &quot; &#233; &quot; &amp;comissao&amp; &quot; .&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
