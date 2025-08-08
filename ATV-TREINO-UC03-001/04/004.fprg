@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="004"/>
+        <attribute name="authors" value="danilo.lwaithmam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-07 09:48:16 "/>
+        <attribute name="created" value="ZGFuaWxvLmx3YWl0aG1hbTtTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0wNzsiMDc6MzI6MzIgIjszNzA0"/>
+        <attribute name="edited" value="ZGFuaWxvLmx3YWl0aG1hbTtTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0wNzsiMDk6NDg6MTYgIjs4OzM4MzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vendedor" type="String" array="False" size=""/>
+            <declare name="salario" type="Real" array="False" size=""/>
+            <declare name="vendas" type="Real" array="False" size=""/>
+            <declare name="comissao" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot; Digite o nome do vendedor.&quot;" newline="True"/>
+            <input variable="vendedor"/>
+            <output expression="&quot; Digite o sal&#225;rio fixo do vendedor.&quot;" newline="True"/>
+            <input variable="salario"/>
+            <output expression="&quot; Digite o valor das vendas de &quot; &amp;vendedor&amp;  &quot;.&quot;" newline="True"/>
+            <input variable="vendas"/>
+            <if expression="vendas&gt;5000">
+                <then>
+                    <assign variable="comissao" expression="(vendas*15/100)"/>
+                </then>
+                <else>
+                    <if expression="vendas&gt;=1500">
+                        <then>
+                            <assign variable="comissao" expression="(vendas*10/100)"/>
+                        </then>
+                        <else>
+                            <assign variable="comissao" expression="(vendas*5/100)"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot; O valor total que &quot; &amp;vendedor&amp; &quot; deve receber (sal&#225;rio + comiss&#227;o) &#233; de &quot; &amp;salario+comissao&amp; &quot; . &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
