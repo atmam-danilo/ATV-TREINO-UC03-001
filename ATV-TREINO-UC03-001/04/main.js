@@ -18,5 +18,14 @@ if (vendas > 5000) {
 }
 
 total = salario + comissao;
-alert(` O valor total que ${vendedor} deve receber (salário + comissão) é de ${total} .`);
 
+alert(`Vendedor: ${vendedor}
+    --------------------------
+    Valor das vendas: R$ ${vendas.toFixed(2)}
+    Valor da comissão: R$ ${comissao.toFixed(2)}
+    Valor do salário: R$ ${salario.toFixed(2)}
+    
+    Total: R$ ${total.toFixed(2)}`);
+
+
+/* alert(` O valor total que ${vendedor} deve receber (salário + comissão) é de R$ ${total.toFixed(2)} .Calculado com base em suas vendas de R$ ${vendas.toFixed(2)} somadas ao seu salário fixo de R$ ${salario.toFixed(2)}`); */
